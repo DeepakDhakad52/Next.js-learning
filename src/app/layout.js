@@ -26,10 +26,7 @@ const Navbar = () => {
     <nav >
       <ul className='flex p-4 justify-center shadow' >
         <li className={li_style}><Link href={'/'}>Home</Link></li>
-        <li className={li_style}><Link href={'/about'}>About</Link></li>
-        <li className={li_style}><Link href={'/contact'}>Contact</Link></li>       
-        <li className={li_style}><Link href={'/studentList'}>StudentList</Link></li>       
-        <li className={li_style}><Link href={'/study'}>Study</Link></li>       
+        <li className={li_style}><Link href={'/products'}>Product List</Link></li>
       </ul>
     </nav>
   )
