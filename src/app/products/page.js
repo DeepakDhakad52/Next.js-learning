@@ -23,4 +23,11 @@ async function page() {
     )
 }
 
+export const generateMetadata = () => {
+    return {
+        title : 'Product List',
+        description: 'This is Product List'
+    }
+}
+
 export default page
