@@ -2,8 +2,7 @@
 const nextConfig = {
     images : {
         domains:['upload.wikimedia.org']
-    },
-    output:'export'
+    }
 }
 
 module.exports = nextConfig

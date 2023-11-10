@@ -30,9 +30,7 @@ const Navbar = () => {
     <nav >
       <ul className='flex p-4 justify-center shadow' >
         <li className={li_style}><Link href={'/'}>Home</Link></li>
-        <li className={li_style}><Link href={'/products'}>Product List</Link></li>
         <li className={li_style}><Link href={'/users'}>User List</Link></li>
-        <li className={li_style}><Link href={'/userDetails'}>User Details</Link></li>
       </ul>
     </nav>
   )
