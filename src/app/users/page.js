@@ -1,18 +1,11 @@
-import Link from "next/link";
-import getUser from "../../../services/getUser"
+import { redirect } from "next/navigation"
+
 
 const page = async () => {
-    const getUserList = getUser();
-    const users = await getUserList;
+    redirect('/')
     return (
         <main className=" min-h-screen px-24 py-4">
-            <h1 className="text-center text-bold text-5xl">User List</h1>
-            {
-                users.map(user =>
-                    <h2 key={user.id}>
-                        <Link href={`/users/${user.id}`}>{user.name}</Link>
-                    </h2>)
-            }
+            <h1 className="text-center text-bold text-5xl">User Page</h1>
         </main>
     )
 }
