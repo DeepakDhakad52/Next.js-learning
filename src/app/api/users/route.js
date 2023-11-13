@@ -1,9 +1,7 @@
+import { user } from "@/utils/db";
 import { NextResponse } from "next/server";
 
-export async function GET(){
-    return NextResponse.json({
-        fullName: 'Deepak Dhakad',
-        age: 22,
-        city: 'Indore'
-    },{status:200});
+export function GET(){
+    const data = user
+    return NextResponse.json(data, {status:200});
 }

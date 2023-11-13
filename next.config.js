@@ -3,7 +3,5 @@ const nextConfig = {
     
 }                   
 
-// Redirection using config file
-
 
 module.exports = nextConfig
