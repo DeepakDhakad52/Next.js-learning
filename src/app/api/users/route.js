@@ -10,7 +10,7 @@ export async function POST(req){
     // console.log(req);
     let payload = await req.json();
     // console.log(payload.name);
-    if(!payload.name || !payload.age || !payload.city || !payload.email){
+    if(!payload.fullName || !payload.age || !payload.city || !payload.email){
         return NextResponse.json({
             result: "Required All fields",
             success: false
