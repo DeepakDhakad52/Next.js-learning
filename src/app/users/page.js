@@ -18,6 +18,7 @@ export default async function Users() {
                     <th className="text-center">Age</th>
                     <th className="text-center">City</th>
                     <th className="text-center">Email</th>
+                    <th className="text-center"></th>
                 </tr>
                 {
                     userList.map(user =>
@@ -26,6 +27,7 @@ export default async function Users() {
                             <td className="text-center">{user.age}</td>
                             <td className="text-center">{user.city}</td>
                             <td className="text-center">{user.email}</td>
+                            <td className="text-center"><Link href={`/users/${user.id}/update`}>Edit</Link></td>
                         </tr>
                     )
                 }
