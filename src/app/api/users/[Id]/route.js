@@ -7,3 +7,19 @@ export function GET(req,res){
     const userData = data.filter(user => user.id == res.params.Id);
     return NextResponse.json(userData.length == 0 ? {result: 'Not Found',success: false} : userData, {status:200});
 }
+
+export async function PUT(req, content){
+    let payload = await req.json();
+    // console.log(payload);
+
+    payload.Id = content.params.Id;
+
+    if(!payload.Id || !payload.fullName || !payload.city || !payload.email || !payload.age) {
+        return NextResponse.json({
+            result: "Required all fields",
+            success: false
+        },{status:400});
+    }
+
+    return NextResponse.json({result: payload, success: true},{status: 200});
+}
