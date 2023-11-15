@@ -23,3 +23,13 @@ export async function PUT(req, content){
 
     return NextResponse.json({result: payload, success: true},{status: 200});
 }
+
+export function DELETE(req, content){
+    let id = content.params.Id;
+    console.log(id);
+    if(id) {
+        return NextResponse.json({result: 'User Deleted',success: true},{status:200});
+    } else {
+        return NextResponse.json({result: 'Something went Wrong...', success: false},{status: 400});
+    }
+}
