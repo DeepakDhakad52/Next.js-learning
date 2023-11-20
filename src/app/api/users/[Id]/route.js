@@ -26,7 +26,7 @@ export async function PUT(req, content){
 
 export function DELETE(req, content){
     let id = content.params.Id;
-    console.log(id);
+    // console.log(id);
     if(id) {
         return NextResponse.json({result: 'User Deleted',success: true},{status:200});
     } else {
