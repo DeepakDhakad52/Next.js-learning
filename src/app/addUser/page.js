@@ -17,7 +17,7 @@ const AddUser = () => {
             body: JSON.stringify(userData)
         });
         response = await response.json();
-        console.log(response);
+        // console.log(response);
 
         // console.log(userData);
 
